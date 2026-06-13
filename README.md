@@ -124,9 +124,3 @@ Here's roughly what your days and weeks will look like:
 - **End-of-summer presentation:** You'll present your results to the group. Your RGB images, X-ray overlays, and mass maps will all be part of this!
 
 ---
-
-## 💬 A Note Before You Begin
-
-You don't need to already know Python. You don't need to already know astronomy. What you *do* need is curiosity and a willingness to try things and ask questions when you're stuck — and trust us, everyone gets stuck. That's just science.
-
-We're genuinely glad you're here. Let's go find some dark matter. 🚀
