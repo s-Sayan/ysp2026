@@ -1,13 +1,5 @@
 # 🔭 Welcome to the Young Scholars Program 2026!
 
-Hey, welcome aboard! You're about to spend your summer doing **real astrophysics research** — not textbook exercises, but actual science using data from a real space telescope. That's pretty awesome, and we're genuinely excited to have you here.
-
-Don't worry if things feel unfamiliar at first. Everyone starts somewhere, and we'll be with you every step of the way.
-
----
-
-## 🌌 So, What Are We Actually Studying?
-
 This summer, you'll be exploring **galaxy clusters** — the largest structures in the entire universe. To give you a sense of scale: a single galaxy like our Milky Way contains hundreds of billions of stars. Galaxy clusters contain *hundreds of galaxies*, all bound together by gravity, spread across distances of several **megaparsecs**.
 
 > **Quick unit check:** 1 parsec ≈ 3.26 light-years. A light-year is how far light travels in one year — and light moves at 186,000 miles per second. So yes, these things are *enormous*.
@@ -24,13 +16,13 @@ This summer, you'll work with **three types of data** from galaxy clusters:
 2. **X-ray emission** from hot gas
 3. **Dark matter maps** reconstructed from gravitational lensing
 
-Your job is to bring all three together and see how they relate to each other. Pretty wild, right?
+Your job is to bring all three together and see how they relate to each other.
 
 ---
 
 ## 🎈🛰️ Meet SuperBIT
 
-The data you'll be working with comes from **SuperBIT** — a balloon-borne imaging telescope that floats to an altitude where it's *above 99% of Earth's atmosphere*. That means it gets incredibly sharp images, almost like being in space, but at a fraction of the cost of a satellite.
+The data you'll be working with comes from **SuperBIT** — a balloon-borne imaging telescope that floats to an altitude where it's *above 99% of Earth's atmosphere*. That means it gets incredibly sharp images, almost like being in space, but at a fraction of the cost of a space-telescope.
 
 SuperBIT has observed many galaxy clusters, most of which are actively **merging** — two massive clusters colliding in slow motion over millions of years. These are some of the most energetic events in the universe, and they give us a unique window into how dark matter, gas, and galaxies all behave under extreme conditions.
 
@@ -44,6 +36,7 @@ Before diving into science, let's get your tools ready. Here's your checklist:
 
 - [ ] **Download and install [Anaconda](https://www.anaconda.com/products/distribution)** — this is a free Python distribution that makes managing packages easy. Install it on your laptop.
 - [ ] **Install the `superbit-lensing` repo** — follow the instructions at [github.com/superbit-collaboration/superbit-lensing](https://github.com/superbit-collaboration/superbit-lensing). It's straightforward, and we're here to help if anything trips you up!
+- [ ] **Install DS9** - https://sites.google.com/cfa.harvard.edu/saoimageds9
 - [ ] **Get your Northeastern University email** — you'll need this for the next step.
 - [ ] **Get access to Explorer**, Northeastern's High Performance Computing (HPC) cluster — this is where most of the data lives. You can only request access once you have your NU email, so this might take a little time.
 
@@ -62,7 +55,7 @@ Your first task is to create stunning **RGB color images** of galaxy clusters by
 
 The notebook walks you through how to do this and lets you experiment with brightness, contrast, and color stretching. These images will go directly into your **final presentation**, so make them look good!
 
-Later on, you'll also overlay X-ray data and dark matter maps on top — those make for some truly spectacular visuals.
+Later on, you'll also overlay X-ray data and dark matter maps on top.
 
 ---
 
@@ -73,7 +66,7 @@ Later on, you'll also overlay X-ray data and dark matter maps on top — those m
 
 Next up, you'll work with **X-ray data** from galaxy clusters — this traces the super-heated gas (we're talking tens of millions of degrees!) that fills the space between galaxies.
 
-You'll create **contour maps** — kind of like a topographic map, but for X-ray brightness — and overlay them on your optical images. 
+You'll create **contour maps** for X-ray brightness — and overlay them on your optical images. 
 
 **A special bonus:** This notebook was created by **Leila Ohashi**, a student from *last year's* YSP program who is heading to Stanford this fall! She'll meet with you on **Wednesday, June 24th at 10 am** to walk you through it and share tips on working with astronomical data.
 
@@ -95,9 +88,7 @@ You'll save your final catalog of cluster members for use in later analysis, and
 
 ### Task 4: Make Dark Matter Maps (The Grand Finale!)
 
-This is the most advanced task, and it's genuinely cutting-edge science.
-
-Using a technique called **Kaiser-Squires inversion**, you'll take the subtle distortions in background galaxy shapes and reconstruct a **convergence map** — essentially a 2D map of where all the mass (mostly dark matter) is located in the cluster.
+This is the most advanced task. Using a technique called **Kaiser-Squires inversion**, you'll take the subtle distortions in background galaxy shapes and reconstruct a **convergence map** — essentially a 2D map of where all the mass (mostly dark matter) is located in the cluster. There is code called SMPy which we use, I'll later on add a folder including the codes needed to do this, dont worry about this for now.
 
 You'll experiment with different parameters and evaluate your results using **signal-to-noise ratio (SNR)** — a measure of how confidently you've detected something above the noise. Higher SNR = cleaner detection.
 
@@ -119,7 +110,7 @@ You have data for a whole bunch of clusters! Feel free to divide them among your
 | RXCJ1314d4m2515 | RXCJ1514d9m1523 | RXCJ2003d5m2323 | SMACSJ2031d8m4036 |
 | SPTCLJ0411 | Z20_SPT_CLJ0135m5904 | | |
 
-The data lives at: `/projects/mccleary_group/ysp2026/coadd`
+The data lives at: `/projects/mccleary_group/ysp2026`
 
 ---
 
