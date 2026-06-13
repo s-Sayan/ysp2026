@@ -53,7 +53,7 @@ Before diving into science, let's get your tools ready. Here's your checklist:
 
 ## 📋 Your Projects This Summer
 
-### 🎨 Task 1: Make Beautiful Color Images of Galaxy Clusters
+### Task 1: Make Beautiful Color Images of Galaxy Clusters
 
 **Notebook:** `notebook/rgb.ipynb`  
 **Data:** `/projects/mccleary_group/ysp2026/coadd`
@@ -66,7 +66,7 @@ Later on, you'll also overlay X-ray data and dark matter maps on top — those m
 
 ---
 
-### ☢️ Task 2: Map the Hot Gas with X-ray Contours
+### Task 2: Map the Hot Gas with X-ray Contours
 
 **Notebook:** https://github.com/LeilaOhashi/leila_superbit_lensing/blob/notebook-only-clean/notebooks/leila_redseq.ipynb  
 **Data:** `/projects/mccleary_group/ysp2026/xray`
@@ -81,7 +81,7 @@ You'll also get to meet **Dr. Giulia Cerini**, a postdoctoral scientist at JPL (
 
 ---
 
-### 🔴 Task 3: Find the Cluster Members
+### Task 3: Find the Cluster Members
 
 **Notebook:** `notebook/redseq.ipynb`
 
@@ -93,7 +93,7 @@ You'll save your final catalog of cluster members for use in later analysis, and
 
 ---
 
-### 🗺️ Task 4: Make Dark Matter Maps (The Grand Finale!)
+### Task 4: Make Dark Matter Maps (The Grand Finale!)
 
 This is the most advanced task, and it's genuinely cutting-edge science.
 
@@ -103,7 +103,7 @@ You'll experiment with different parameters and evaluate your results using **si
 
 ---
 
-## 🌍 Cluster Targets
+## 🔭 Cluster Targets
 
 You have data for a whole bunch of clusters! Feel free to divide them among yourselves — we recommend tracking progress in a shared Google Sheet (like [this one](https://docs.google.com/spreadsheets/d/1PdYF34n7FV2bDfDlDr8NZSN06H1iTEX3BPRIU2FTYyY/edit?usp=sharing) from last year's students):
 
