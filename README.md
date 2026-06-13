@@ -36,7 +36,7 @@ Before diving into science, let's get your tools ready. Here's your checklist:
 
 - [ ] **Download and install [Anaconda](https://www.anaconda.com/products/distribution)** — this is a free Python distribution that makes managing packages easy. Install it on your laptop.
 - [ ] **Install the `superbit-lensing` repo** — follow the instructions at [github.com/superbit-collaboration/superbit-lensing](https://github.com/superbit-collaboration/superbit-lensing). It's straightforward, and we're here to help if anything trips you up!
-- [ ] **Install DS9** - https://sites.google.com/cfa.harvard.edu/saoimageds9
+- [ ] **Install [DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)** — a powerful astronomical image viewer you'll use throughout the summer
 - [ ] **Get your Northeastern University email** — you'll need this for the next step.
 - [ ] **Get access to Explorer**, Northeastern's High Performance Computing (HPC) cluster — this is where most of the data lives. You can only request access once you have your NU email, so this might take a little time.
 
