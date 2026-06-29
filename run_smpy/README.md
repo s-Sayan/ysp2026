@@ -12,6 +12,7 @@ Do a fresh `git pull` of this repo and the `superbit-lensing` repo. Then navigat
 
 ```bash
 python add_smpy_alias.py
+source ~/.bashrc
 ```
 
 This adds a shell alias required for the steps below.
