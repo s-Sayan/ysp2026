@@ -1,0 +1,104 @@
+# ============================================================
+#  Unified Weak-Lensing Pipeline Configuration
+# ============================================================
+
+# --- Pipeline toggles -------------------------------------------------------
+run_separator: true          # Run target_separator before SNR mapping
+plot_kappa: false             # Plot E- and B-mode convergence maps
+plot_error: false             # Plot noise standard-deviation map
+save_fits: true              # Save convergence / noise maps as FITS files
+
+# --- Target -----------------------------------------------------------------
+target_name: "1E0657_Bullet"
+target_redshift: 0.296
+redshift_offset: 0.02
+band: b
+
+# --- Directory roots --------------------------------------------------------
+data_dir: "/projects/mccleary_group/ysp2026/shapes"
+foreground_base: "/projects/mccleary_group/ysp2026/shapes/foreground" # or foregound_new
+output_base: "/projects/mccleary_group/ysp2026/kappa_maps"
+xray_base: "/projects/mccleary_group/ysp2026/shapes/xray_contours"
+
+# --- Separator I/O ----------------------------------------------------------
+mega_file: "${data_dir}/mega_annular_catalog_20260424_111327_calibrated.fits"
+foreground_file: "${foreground_base}/${target_name}/pure_foreground/${target_name}_0.8_foreground_pixel_0.05_and_redseq.fits"
+separator_outfile: "${output_base}/${target_name}/${target_name}_shapes_cal_selected.fits"
+overwrite: true
+
+# --- Metacalibration --------------------------------------------------------
+mcal_shear: 0.01
+
+# --- Matching ---------------------------------------------------------------
+tolerance_arcsec: 1.0
+
+# --- Quality cuts -----------------------------------------------------------
+qual_cuts:
+  min_Tpsf: 0.5
+  max_sn: 1000
+  min_sn: 5.0
+  min_T: 0.0
+  max_T: 100
+
+
+# --- Boundary cuts -----------------------------------------------------------
+boundary_cuts:
+  # min_ra: 104.4
+  # max_ra: 104.8
+  # min_dec: -56.03
+  # max_dec: -55.87
+
+# --- NED query fallback -----------------------------------------------------
+ned:
+  max_attempts: 3
+  wait_time: 5
+  radius_shrink_factor: 1.06
+  fail_silently: false
+
+# --- SNR / convergence mapping ----------------------------------------------
+snr_output_path: "./"         # Where SNR products land
+resolution: 0.4               # arcmin
+gaussian_kernel: 2.0
+aperture_mass_Rs: 22.50
+gridding: xy                  # 'xy' or 'ra_dec'
+
+# --- Noise realisations -----------------------------------------------------
+num_sims: 1000
+seed_sims: 12000
+shuffle_type: rotation         # 'rotation' or 'spatial'
+
+# --- Convergence map display limits -----------------------------------------
+kmap_vmax: 0.25
+kmap_vmin: -0.25
+kmap_threshold: 0.2
+
+# --- SNR map display limits -------------------------------------------------
+vmax: 
+vmin: 
+threshold: 3.5
+
+# --- Plotting ---------------------------------------------------------------
+figsize: [10, 7]
+cmap: magma
+xlabel: "Right Ascension (deg)"
+ylabel: "Declination (deg)"
+plot_title: "SNR map: "
+gridlines: true
+
+# --- Column names -----------------------------------------------------------
+ra_col: ra
+dec_col: dec
+g1_col: g1_cal_5x5
+g2_col: g2_cal_5x5
+weight_col: w_inv_5x5
+x_col: X_IMAGE
+y_col: Y_IMAGE
+
+# --- X-ray contour overlay (optional) ---------------------------------------
+xray_contour_file: "${xray_base}/${target_name}_xray_contours.ctr"            # path to DS9 .ctr file; leave blank to skip
+xray_contour_color: "cyan"
+xray_contour_s: 2.0
+
+# --- Mode -------------------------------------------------------------------
+mode: [E]
+box_boundary:
