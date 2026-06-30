@@ -22,7 +22,7 @@ xray_base: "/projects/mccleary_group/ysp2026/shapes/xray_contours"
 
 # --- Separator I/O ----------------------------------------------------------
 mega_file: "${data_dir}/mega_annular_catalog_20260424_111327_calibrated.fits"
-foreground_file: "${foreground_base}/${target_name}/pure_foreground/${target_name}_0.8_foreground_pixel_0.05_and_redseq.fits"
+foreground_file: "${foreground_base}/${target_name}/${target_name}_foreground.fits"
 separator_outfile: "${output_base}/${target_name}/${target_name}_shapes_cal_selected.fits"
 overwrite: true
 
