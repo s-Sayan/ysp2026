@@ -43,12 +43,17 @@ This generates **dark matter (convergence) maps** from galaxy shape measurements
 
 Your goal for each target is to produce a high signal-to-noise convergence map by tuning the following parameters in `config.yaml`:
 
-**Quality cuts:**
+**Foreground catalog** — try both options and see which gives better results:
+```yaml
+foreground_base: "/projects/mccleary_group/ysp2026/shapes/foreground_new"  # try foreground_new or foreground
+```
+
+**Quality cuts** — tune `min_Tpsf` and `min_sn` only:
 ```yaml
 qual_cuts:
-  min_Tpsf: 0.5
+  min_Tpsf: 0.5   # tune this
   max_sn: 1000
-  min_sn: 5.0
+  min_sn: 5.0     # tune this
   min_T: 0.0
   max_T: 100
 ```
@@ -64,7 +69,9 @@ gaussian_kernel: 1.5
 aperture_mass_Rs: 22.50
 ```
 
-After each run, two subdirectories — `ks/` and `aperture_mass/` — will be created inside the target directory, containing SNR maps named `snr_<...>.png`. Examine these images: X-ray contours should be overlaid automatically. The dark matter distribution won't always coincide exactly with the X-ray emission, but it should be in the same region.
+After each run, two subdirectories — `ks/` and `aperture_mass/` — will be created inside the target directory containing SNR maps (`snr_<...>.png`). Examine these: X-ray contours are overlaid automatically and should roughly trace the dark matter distribution, though they won't always coincide exactly.
+
+Each run also produces **B-mode maps** (`snr_<...>_b_<...>.png`). These should look consistent with noise — no significant peaks. A noisy B-mode is a good sign; prominent peaks would indicate systematics.
 
 ---
 
