@@ -32,7 +32,7 @@ Go to `/projects/mccleary_group/ysp2026/kappa_maps`. Several targets are already
 From inside the target directory (where you placed and edited `config.yaml`), run:
 
 ```bash
-python run_smpy.py config.yaml
+run_smpy config.yaml
 ```
 
 This generates **dark matter (convergence) maps** from galaxy shape measurements. Recall from the Source Extractor tutorial: after extracting sources, we measure galaxy shapes — and those shapes are used here to reconstruct the dark matter distribution.
